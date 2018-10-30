@@ -24,7 +24,9 @@ Open up Chrome dev tools > Source and notice that the file
 
 The correct path should be 'app/src/assets'
 
-To fix the issue either correct the publicPath to '/app/' or uncomment the `//publicPath: baseUrl` on line 70 in the webpack config
+To fix the issue either correct the publicPath to '/app/' or uncomment the `//publicPath: baseUrl` on line 70 in the webpack config.
+
+According to the file-loader docs, file-loader defaults publicPath to 'webpack_public_path' which is the same as output.publicPath so there should really be no difference in behaviour when specifying the exact same publicPath in file-loader options. This indicates, in my mind anyway that there is an issue somewhere with file-loader.
 
 The issue is detailed here:
 https://github.com/webpack-contrib/file-loader/issues/286
