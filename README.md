@@ -10,7 +10,7 @@ The instructions in the repo readme were followed, specifically:
  npm run kickstart
 ```
 
-I then modified the webpack configs to use an output.publicPath so that the content can be served from some sub-path off the root of a domain.
+I then modified the webpack configs to use an output.publicPath so that the content can be served from some sub-path off the root of a domain. I also replaced url-loader with file-loader to simplify for testing.
 
 However, when using a public path of '/app' (without a trailing slash) it causes the file-loader plugin to concatenate the options.publicPath with the value of options.name without using a '/' path separator.
 
