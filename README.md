@@ -3,6 +3,9 @@
 This was created from the following repo:
 https://github.com/lifenautjoe/webpack-starter-basic
 
+Which was found from this list:
+https://webpack.js.org/starter-kits/
+
 The instructions in the repo readme were followed, specifically:
 
 ```sh
