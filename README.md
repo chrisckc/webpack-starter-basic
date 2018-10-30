@@ -26,4 +26,9 @@ The correct path should be 'app/src/assets'
 
 To fix the issue either correct the publicPath to '/app/' or uncomment the `//publicPath: baseUrl` on line 70 in the webpack config
 
+The issue is detailed here:
+https://github.com/webpack-contrib/file-loader/issues/286
+
+This repo was created for demonstration and testing purposes.
+
 
